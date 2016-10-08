@@ -11,9 +11,10 @@ centos-setup:
 	echo '#!/bin/bash' | sudo tee /usr/bin/saxon
 	echo 'exec java -jar /usr/share/java/saxon.jar "$$@"' | sudo tee -a /usr/bin/saxon
 	sudo chmod +x /usr/bin/saxon
-deb-setup:
+debian-setup:
 	sudo apt-get -y install saxon parallel npm nodejs inotify-tools
 	sudo npm install -g browser-sync
+ubuntu-setop: debian-setup
 mac-setup:
 	brew install saxon parallel fswatch npm nodejs
 	npm install -g browser-sync

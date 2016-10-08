@@ -5,9 +5,11 @@ Using Saxon XSLT and XML.
 ## Initial setup
 Use make:
 ```bash
-make rpm-setup # for centos, redhat fedora
-make deb-setup # for debian and ubuntu
-make mac-setup # for mac os x
+make fedora-setup
+make centos-setop
+make debian-setup
+make ubuntu-setup
+make mac-setup
 ```
 
 ## Once set up execute:
