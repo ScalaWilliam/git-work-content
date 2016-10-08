@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="abc.xsl"?>
 <html>
-<body>
-  <h1>Git Work</h1>
-  <h2>Revolutionary development</h2>
+  <head><title>Git Work</title></head>
+<body><h1>Git Work</h1><h2>Revolutionary development</h2>
+  
+  <p>GitHub repository: <a
+  href="https://github.com/ScalaWilliam/git-work-content">github.com/ScalaWilliam/git-work-content</a>
+  </p>
+  <p>Also see: <a href="https://git.watch/">git.watch</a></p>
 </body></html>
