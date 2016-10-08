@@ -2,6 +2,9 @@ default: setup build
 rpm-setup:
 	sudo yum install saxon parallel fswatch npm nodejs
 	sudo npm install -g browser-sync
+	echo '#!/bin/bash' | sudo tee /usr/bin/saxon
+	echo 'exec java -jar /usr/share/java/saxon.jar "$@"' | sudo tee -a /usr/bin/saxon
+	sudo chmod +x /usr/bin/saxon
 deb-setup:
 	sudo apt-get install saxon parallel fswatch npm nodejs
 	sudo npm install -g browser-sync
