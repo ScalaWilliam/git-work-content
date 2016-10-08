@@ -12,7 +12,7 @@ make mac-setup # for mac os x
 
 ## Once set up execute:
 ```bash
-make develop
+make -j2 develop
 ```
 
 See `Makefile` for what commands would be executed
