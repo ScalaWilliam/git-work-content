@@ -31,3 +31,11 @@ browser-sync:
 clean:
 	rm -f *.xhtml
 develop: browser-sync watch
+push-refs/heads/master:
+	make git-fetch
+git-watch:
+	git-watch 2>/dev/null || npm install -g gitwatch-client 
+	git-watch --url=https://git.watch/github/ScalaWilliam/git-work-content --push-execute='make push-%ref% || true'
+git-fetch:
+	git fetch
+	git pull origin refs/heads/master
