@@ -2,7 +2,8 @@
 <?xml-stylesheet type="text/xsl" href="abc.xsl"?>
 <html>
   <head><title>Git Work</title></head>
-<body><h1>Git Work</h1>
+<body>
+  <h1>Git Work</h1>
 <h2>Revolutionary development</h2>
 
   <p>GitHub repository: <a
