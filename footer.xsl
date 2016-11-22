@@ -8,10 +8,7 @@
             <xsl:apply-templates select="@*|node()"/>
         </xsl:copy>
         <hr/>
-        <p>
-            <saxon:entity-ref name="copy"/>
-            2016 Apt Elements
-        </p>
+        <xsl:value-of select="'&amp;copy;'" disable-output-escaping="yes"/> 2016 Apt Elements
     </xsl:template>
 
     <xsl:template match="@*|node()">
